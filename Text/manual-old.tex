@@ -1,0 +1,217 @@
+\section{Short guide}
+
+This section contains a short overview, just to give you an idea of the whole operation. You do not need to understand and know about each phrase I mention. :-)
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Download all the software you most likely do not have on your PC.
+	\item Download all the \LaTeX{}-font-files (let's call them ``metrics'') for Minion Pro and Myriad Pro you most likely do not have on your PC.
+	\item Install LCDF typetools for MikTeX.
+	\item Convert the .otf-files.
+	\item Put the files into the right place.
+	\item Get ready.
+\end{enumerate}
+
+\section{Requirements for software}
+
+\subsection{Warning}
+
+This subsection is meant as a friendly warning. The thing is\ldots \LaTeX{} is free. Adobe's fonts are not. Usually. To explain it really short: There are limitations to the use of this Adobe font since you will use Adobe's font files to install Minion Pro and Myriad Pro on your MikTeX system. You will not buy and not steal/illegaly download the fonts. You will download them legally. You might already have them on your PC. So later on, you will convert these ``free font files''. Even if you buy them, I do not know whether it is legal to convert Adobe's font files. You would have to see for yourself. If you want to know more about the aforementioned limitations, you can read the following listed things:
+\begin{itemize}\setlength{\itemsep}{-2pt}
+	\item \href{http://www.adobe.com/products/eulas/}{Adobe’s policy on its Reader and other products that are relevant}
+	\item \href{http://www.adobe.com/type/browser/legal/index.html}{Adobe’s License Agreement on Adobe fonts}
+	\item \href{http://www.adobe.com/aboutadobe/antipiracy/fonts.html}{Adobe’s legal statement concerning piracy and fonts}
+	\item \href{http://www.adobe.com/type/browser/legal/index.html}{Adobe's Western Fonts End User License Agreement}
+\end{itemize}
+
+\subsection{Steps/Downloads}
+
+Here are some steps you might need to take in advance:
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Create a folder somewhere on your PC, preferrably your desktop, and name it\\
+	\textbf{mpro-workingfolder}.
+	\item In the folder \textbf{mpro-workingfolder}, create two folders named\\
+	\textbf{minionpro-\-stuff} and \textbf{myriadpro-\-stuff}.
+	\item Check if you have the Adobe Reader installed. If not, download the version you want (but please mind that it has to be version 7 or higher) and install it. Also, for the next step, please remember where you installed it.
+	\item Go to the Adobe Reader's program folder and follow the path \verb+\Resource\Font+. You find the \textbf{.otf}-files of the Minion Pro and Myriad Pro font there. Copy these files into the folder \textbf{mpro-workingfolder}.
+	\item You will need a program that can extract (also called ``unpack'') archived files, especially of the type \textbf{.zip} and \textbf{.gz}. You could download \href{http://www.google.com/search?\&q=7-zip}{7-zip} or \href{http://en.wikipedia.org/wiki/Comparison_of_file_archivers}{another file archiver}. You need to know how to use the program you downloaded.
+	\item You will need a program that can convert \textbf{.otf}-files into \textbf{Type 1} format. For your convenience, download the file \textbf{lcdf-typetools-w32.tar.gz} on \href{http://www.lcdf.org/type/}{the homepage of the LCDF-project}. If you printed this document, please google/bing this term. Also: You do not need to understand right away what it does and what the font-formats mean. To explain it really short and simple: \LaTeX{} cannot directly use the usual font formats that work for software like OpenOffice.org or MS Office (e.g. .ttf, which is the most common file type for a font).
+\end{enumerate}
+
+\section{Download the LaTeX-files for Minion Pro}\label{sec:download-minion}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Go the \href{http://tug.ctan.org/tex-archive/fonts/minionpro/}{CTAN page for Minion Pro}. If you printed this document, simply google/bing the term ``ctan Minion Pro'' and one of the first three hits should be \emph{the} CTAN page for Minion Pro.
+	\item Download the files \textbf{enc-2.000.zip}, \textbf{metrics-base.zip} and \textbf{scripts.zip}.
+	\item Copy all the downloaded files -except for \textbf{scripts.zip-} into the folder \textbf{minionpro-stuff}.
+	\item Copy \textbf{scripts.zip} into the folder \textbf{mpro-workingfolder}.
+\end{enumerate}
+\textbf{Notes}:\\
+If you like, also download \textbf{metrics-full.zip} and \textbf{metrics-optical.zip} and copy them into \textbf{minionpro-stuff}. According to the \href{http://www.ctan.org/tex-archive/fonts/Minion Pro/}{README} of the minionpro-package, here's what these metrics are good for:
+\begin{itemize}\setlength{\itemsep}{-2pt}
+	\item metrics-base.zip: \\
+	Contains the metrics for Regular, Italic, Bold, and BoldItalic.
+	\item metrics-full.zip: \\
+	Contains additional metrics for Medium, MediumItalic, Semibold, and SemiboldItalic.
+	\item metrics-opticals.zip: \\
+	Contains additional metrics for the Capt, Subh, and Disp optical shapes.
+\end{itemize}
+In case you want more, do not only download \textbf{metrics-full.zip}. You need at least \textbf{metrics-base.zip}. As the description says, the other metrics are \textit{additional}.
+
+\section{Download the LaTeX-files for Myriad Pro}\label{sec:download-myriad}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Open the URL\\
+	\url{http://faq.ktug.or.kr/wiki/uploads/MyriadProAR7.zip}\\
+	in your browser. If you printed this document, you need to type it and hit Enter.
+	\item You \textbf{should} be prompted to download the file \textbf{MyriadPro7.zip}. Click on \befehl{Yes}.
+	\item Extract\footnote{``Extract'' is meant to be used via the file archiver of your choice. This applies to all ``Extract'''s in this document.} this file into the folder \textbf{myriadpro-stuff}.
+\end{enumerate}
+
+\section{Install LCDF typetools}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Extract the archive \textbf{lcdf-typetools-w32.tar.gz}.
+	\item Go into the extracted folder.
+	\item Mark all files in this folder and ``cut'' them (ctrl+x).
+	\item Let's say you installed MikTeX 2.x in \verb+F:\Program Files\+. Go to\\
+	\verb+F:\Program Files\MikTeX 2.x\miktex+\\
+	and insert the copied files. Click on \befehl{Yes} if the dialogue about existing folders/files pops up.
+	\item Start MikTeX's settings manager and click on \befehl{Refresh FNDB}.
+\end{enumerate}
+
+\section{Conversion of .otf files}\label{sec:conversion}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Go into the folder \textbf{mpro-workingfolder}.
+	\item Mark all the \textbf{.otf}-files and copy or cut them (ctrl+c or ctrl+x).
+	\item Extract the file \textbf{scripts.zip} into the folder \textbf{mpro-workingfolder}.
+	\item Double-click on the folder \textbf{scripts} and then again on the folder \textbf{otf}.
+	\item Right-click on the empty space and then click on insert (ctrl+v).
+	\item Go one folder up, so that you see the file \textbf{convert.bat}.
+	\item Then double-click on \textbf{convert.bat}.
+	\item You should now see a new folder named \textbf{pfb}. In this folder, you should see 16 files, 16 .pfb-files with Myriad/Minion Pro in their name. You can delete the files with the term \textbf{LCDF} in their name.
+\end{enumerate}
+
+\section{The Right Place}
+
+\subsection{LaTeX-files (metrics)}
+
+Up until April 19, 2013, this guide stated that the metrics for Minion Pro had to be put in the installation folder of MikTeX. To be technically correct, this was ok. But the ``had''-implication was not, hence I changed the part to saying they can be put into the local {\TeX}MF-folder (\href{http://en.wikipedia.org/wiki/TeX_Directory_Structure}{[1]}, \href{http://www.ctan.org/tex-archive/tds}{[2]}) as well.
+
+\subsubsection{Minion Pro}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Go into the folder \textbf{minionpro-stuff}.
+	\item Mark all the files you put there in \autoref{sec:download-minion}. So you should at least mark \textbf{enc-2.000.zip} and \textbf{metrics-base.zip}. You might also mark \textbf{metrics-full.zip} and \textbf{metrics-optical.zip}.
+	\item Extract them into your local {\TeX}MF-folder. This might take a while, maybe up to 2 minutes.\footnote{It took me about 1.5 minutes on my old Lenovo T61 laptop which is from 2006 I believe.} If you don't know where your local {\TeX}MF-folder (\href{http://en.wikipedia.org/wiki/TeX_Directory_Structure}{[1]}, \href{http://www.ctan.org/tex-archive/tds}{[2]}) is, here's a description:\\
+	Let's say you installed your Windows OS on drive \verb+C:+ and your username on your Windows OS is Phil. Then choose one of the following locations:
+	\begin{enumerate}
+		\item For Windows XP:\\
+		Insert the copied files into the folder\\
+			\verb+C:\Documents and Settings\Phil\Local+\ldots\\
+		\ldots \verb+Properties\Application Data\MikTeX\2.x\+.
+		\item \normalsize For Windows Vista the folder is:\\
+		\verb+C:\Users\Phil\AppData\Roaming\MikTeX\2.x+
+		\item For Windows 7 it is:\\
+		\verb+C:\Users\Phil\AppData\Roaming\MikTeX\2.x+
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Myriad Pro}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Go into the folder \textbf{myriadpro-stuff}.
+	\item Mark the folder \textbf{fonts}.
+	\item Copy it (ctrl+c).
+	\item Insert it into your local {\TeX}MF-folder.
+	\item Go into the folder \textbf{myriadpro-stuff}.
+	\item Mark the folders \textbf{dvips} and \textbf{tex}.
+	\item Copy them (ctrl+c).
+	\item Insert them into the folder \verb+F:\Program Files\MikTeX 2.x\+.
+\end{enumerate}
+
+\subsection{Converted font-files}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Go into the folder \textbf{pfb} from the last step in \autoref{sec:conversion}.
+	\item Mark the \textbf{.pfb}-files for Minion Pro and copy them.
+	\item You have to insert the copied \textbf{.pfb}-files into your local {\TeX}MF-folder. (Remember, your username is Phil.)
+	\begin{enumerate}
+		\item For Windows XP: Insert the copied files into the folder\\
+		\verb+C:\Documents and Settings\Phil\Local Properties\Application+\ldots\\
+		\ldots\verb+Data\MikTeX\2.x\fonts\type1\Adobe\MinionPro\+.
+		\item \normalsize For Windows Vista:\\
+		\verb+C:\Users\Phil\AppData\Roaming\MikTeX\2.x\fonts\type1\Adobe\MinionPro\+
+		\item For Windows 7 it is:\\
+		\verb+C:\Users\Phil\AppData\Roaming\MikTeX\2.x\fonts\type1\Adobe\MinionPro\+
+	\end{enumerate}
+	\normalsize If prompted, click on \befehl{Yes}.
+	\item Do the preceeding 3 steps similarly for the Myriad Pro font files, meaning ``MinionPro'' is ``MyriadPro''.
+\end{enumerate}
+
+\section{The Final Steps}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Click down the path \verb+F:\Program Files\MikTeX 2.x\miktex\config+.
+	\item Right-click on \textbf{updmap.cfg} and open with Windows Wordpad.
+	\item At the very end of the file, add \textbf{Map MinionPro.map} and \textbf{Map MyriadPro.map}. Close the file, click on \befehl{Yes} (so that you save the changes) when the dialogue pops up. Please mind: Do not change the filename. The filename has to stay \textbf{updmap.cfg}.
+	\item In Windows, click on \textbf{Start} (left bottom).
+	\item Click on \textbf{Run}\footnote{``Ausführen'' in German.}.
+	\item Enter \textbf{cmd} and right-click on it and then on ``Execute as Administrator''\footnote{``Als Administrator ausführen'' in German.}.\footnote{A  thank you to \href{http://www.typografie.info/3/topic/25089-schriftart-festlegen/\#entry132082}{Curryhuhn} for this one.}
+	\item For the following steps, the procedure for each term is to type in the term, hit Enter, wait for the computer to finish the process and go on to the next term.
+	\begin{enumerate}
+		\item texhash (which equals \befehl{Refresh FNDB} from the MikTeX settings manager GUI.)
+		\item initexmf -u
+		\item updmap
+	\end{enumerate}
+	\item You can now use the command
+	\begin{center}\begin{minipage}[t]{8cm}
+	\begin{flushleft}
+	\verb+\usepackage{MinionPro}+.
+	\end{flushleft}
+	\end{minipage}\end{center}
+	You'll get Minion Pro as the main text and math font for your document. For the use of Myriad Pro as your usual font for captions, use
+	\begin{center}\begin{minipage}[t]{8cm}
+	\begin{flushleft}
+	\verb+\renewcommand{\sfdefault}{Myriad-LF}+.
+	\end{flushleft}
+	\end{minipage}\end{center}Do \emph{not} use 
+	\begin{center}\begin{minipage}[t]{8cm}
+	\begin{flushleft}
+	\verb+\usepackage{MyriadPro}+ or\\
+	\verb+\usepackage{Minion-LF}+.
+	\end{flushleft}
+	\end{minipage}\end{center}
+	For the first build of your \LaTeX{} document with these two commands, you have to wait a bit for it to finish.
+\end{enumerate}
+
+\section{Usage and ligatures}
+
+\begin{itemize}\setlength{\itemsep}{-2pt}
+	\item In case you would like to search in your generated .pdf-file later on and you are looking for words with ligatures (e.g. ``definition''; for further information see your local wikipedia page for this term, please) or German Umlauten, you are not going to find them. But \LaTeX{} can unmask these symbols so that they become ``searchable'', if you will. It also enables to copy text out of the generated .pdf-file without any problems.\footnote{Without any problems when compiled via PDF\TeX{} (pdflatex.exe), that is. Ironically, the old file I created was created via `PS $\rightarrow$ PDF' (latex.exe) and that \emph{apparently} omits ligatures. So if anyone copied and pasted the following link, it didn't work because of the ligature ``ft'' in Minion Pro.} For that, write/copy\\
+	\verb+http://www.tug.org/texlive/devsrc/Master/texmf/tex/generic/pdftex/+\\
+	into your browser's adress bar and hit Enter.
+
+	\item You have to put the file \textbf{glyphtounicode.tex} into your main .tex-file's folder, meaning the folder of the file you compile when generating your .pdf- or .ps-file. Use the file via \verb+\input+ and then activate the unmasking via \verb+\pdfgentounicode=1+.
+	\item Just to make sure: The ``on-the-fly''-option needs to be enabled/active if you haven't installed the \href{http://ctan.org/pkg/minionpro}{minionpro-package} prior to the first run.
+	\item In the end, it could look like this:
+	\begin{center}\begin{minipage}[t]{8cm}
+	\begin{flushleft}
+	\verb+\usepackage{MinionPro}+\\
+	\verb+\renewcommand{\sfdefault}{Myriad-LF}+\\
+	\verb+\input{glyphtounicode}+\\
+	\verb+\pdfgentounicode=1+\\
+	\verb+\usepackage{inconsolata}+
+	\end{flushleft}
+	\end{minipage}\end{center}
+\end{itemize}
+
+\section{Miscellaneous notes}
+
+\begin{enumerate}\setlength{\itemsep}{-2pt}
+	\item Just in case the Myriad Pro resources vanish some day from the server where they are located, you could take a look at the\\
+	\href{http://www.tug.dk/FontCatalogue/}{\LaTeX{} Font Catalogue (http://www.tug.dk/FontCatalogue/)}.\\
+	I think the Bera Sans font looks quite alright with Minion Pro.
+	\item In math mode, MnSymbol will should be chosen and installed automatically, but this again requires the activated ``on-the-fly''-option in the MikTeX settings manager. If you have a firewall (say such as ZoneAlarm), make sure that the relevant executables (pdflatex.exe and some other executables from MikTeX called mpm\_mfc.exe and so on) can connect to the internet.
+	\item There wasn't any typewriter style supplied with \href{http://www.adobe.com/type/browser/P/P_1719.html}{Adobe's original Minion Pro files}. That's why there is the line \verb+\usepackage{inconsolata}+. It loads a typewriter font. There are \href{http://www.tug.dk/FontCatalogue/typewriterfonts.html}{lots of other typewriter style fonts available, just take a look at the Font Catalogue}. You could also type \verb+\renewcommand{\ttdefault}{lmtt}+, then you would get the typewriter style of the Latin Modern fonts (usually loaded via \verb+\usepackage{lmodern}+).
+\end{enumerate}
