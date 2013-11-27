@@ -4,7 +4,7 @@
 
 This section contains a short overview, just to give you an idea of the whole operation. You do not need to understand and know about each phrase I mention. :-)
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Download all the software you most likely do not have on your PC.
 	\item Download all the \LaTeX{}-font-files (let's call them ``metrics'') for Minion Pro and Myriad Pro you most likely do not have on your PC.
 	\item Install LCDF typetools for MikTeX.
@@ -17,8 +17,8 @@ This section contains a short overview, just to give you an idea of the whole op
 
 \subsection{Warning}
 
-This subsection is meant as a friendly warning. The thing is\ldots \LaTeX{} is free. Adobe's fonts are not. Usually. To explain it really short: There are limitations to the use of this Adobe font since you will use Adobe's font files to install Minion Pro and Myriad Pro on your MikTeX system. You will not buy and not steal/illegaly download the fonts. You will download them legally. You might already have them on your PC. So later on, you will convert these ``free font files''. Even if you buy them, I do not know whether it is legal to convert Adobe's font files. You would have to see for yourself. If you want to know more about the aforementioned limitations, you can click through and read the following non-allencompassing list of links:
-\begin{itemize}\setlength{\itemsep}{-2pt}
+This subsection is meant as a friendly warning. The thing is\ldots \LaTeX{} is free. Adobe's fonts are not. Usually. To explain it really short: There are limitations to the use of this Adobe font since you will use Adobe's font files to install Minion Pro and Myriad Pro on your MikTeX system. You will not buy and not steal/illegaly download the fonts. You will download them legally. You might already have them on your PC. So later on, you will convert these ``free font files''. Even if you buy them, I do not know whether it is legal to convert Adobe's font files. You would have to see for yourself. If you want to know more about the aforementioned limitations, you can click through and read the following non-complete list of links:
+\begin{itemize}
 	\item \href{http://www.adobe.com/products/eulas/}{Adobe's policy on its Reader and other products that are relevant}
 	\item \href{http://www.adobe.com/type/browser/legal/index.html}{Adobe's License Agreement on Adobe fonts}
 	\item \href{http://www.adobe.com/aboutadobe/antipiracy/fonts.html}{Adobe's legal statement concerning piracy and fonts}
@@ -28,7 +28,7 @@ This subsection is meant as a friendly warning. The thing is\ldots \LaTeX{} is f
 \subsection{Steps/Downloads}
 
 Here are some steps you might need to take in advance:
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Create a folder somewhere on your PC, preferrably your desktop, and name it\\
 	\textbf{mpro-workingfolder}.
 	\item In the folder \textbf{mpro-workingfolder}, create two folders named\\
@@ -41,15 +41,15 @@ Here are some steps you might need to take in advance:
 
 \section{Download the LaTeX-files for Minion Pro}\label{sec:download-minion}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
-	\item Go the \href{http://tug.ctan.org/tex-archive/fonts/minionpro/}{CTAN page for Minion Pro}. If you printed this document, simply google/bing the term ``ctan Minion Pro'' and one of the first three hits should be \emph{the} CTAN page for Minion Pro.
+\begin{enumerate}
+	\item Go the \href{http://ctan.org/tex-archive/fonts/minionpro/}{CTAN page for Minion Pro}. If you printed this document, simply google/bing the term ``ctan Minion Pro'' and one of the first three hits should be \emph{the} CTAN page for Minion Pro.
 	\item Download the files \textbf{enc-2.000.zip}, \textbf{metrics-base.zip} and \textbf{scripts.zip}.
 	\item Copy all the downloaded files -except for \textbf{scripts.zip-} into the folder \textbf{minionpro-stuff}.
 	\item Copy \textbf{scripts.zip} into the folder \textbf{mpro-workingfolder}.
 \end{enumerate}
 \textbf{Notes}:\\
 If you like, also download \textbf{metrics-full.zip} and \textbf{metrics-optical.zip} and copy them into \textbf{minionpro-stuff}. According to the \href{http://www.ctan.org/tex-archive/fonts/Minion Pro/}{README} of the minionpro-package, here's what these metrics are good for:
-\begin{itemize}\setlength{\itemsep}{-2pt}
+\begin{itemize}
 	\item metrics-base.zip: \\
 	Contains the metrics for Regular, Italic, Bold, and BoldItalic.
 	\item metrics-full.zip: \\
@@ -61,14 +61,14 @@ In case you want more, do not only download \textbf{metrics-full.zip}. You need 
 
 \section{Download the LaTeX-files for Myriad Pro}\label{sec:download-myriad}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item You can find the file \textbf{MyriadPro7.zip} in the git repo.
 	\item Extract\footnote{``Extract'' is meant to be used via the file archiver of your choice. This applies to all ``Extract'''s in this document of course.} this file into the folder \textbf{myriadpro-stuff}.
 \end{enumerate}
 
 \section{Install LCDF typetools}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Extract the archive \textbf{lcdf-typetools-w32.tar.gz}.
 	\item Go into the extracted folder.
 	\item Mark all files in this folder and ``cut'' them (ctrl+x).
@@ -80,7 +80,7 @@ In case you want more, do not only download \textbf{metrics-full.zip}. You need 
 
 \section{Conversion of .otf files}\label{sec:conversion}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Go into the folder \textbf{mpro-workingfolder}.
 	\item Mark all the \textbf{.otf}-files and copy or cut them (ctrl+c or ctrl+x).
 	\item Extract the file \textbf{scripts.zip} into the folder \textbf{mpro-workingfolder}.
@@ -99,7 +99,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \subsubsection{Minion Pro}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Go into the folder \textbf{minionpro-stuff}.
 	\item Mark all the files you put there in \autoref{sec:download-minion}. So you should at least mark \textbf{enc-2.000.zip} and \textbf{metrics-base.zip}. You might also mark \textbf{metrics-full.zip} and \textbf{metrics-optical.zip}.
 	\item Extract them into your local {\TeX}MF-folder. This might take a while, maybe up to 2 minutes.\footnote{It took me about 1.5 minutes on my old Lenovo T61 laptop which is from 2006 I believe.} If you don't know where your local {\TeX}MF-folder (\href{http://en.wikipedia.org/wiki/TeX_Directory_Structure}{[1]}, \href{http://www.ctan.org/tex-archive/tds}{[2]}) is, here's a description:\\
@@ -118,7 +118,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \subsubsection{Myriad Pro}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Go into the folder \textbf{myriadpro-stuff}.
 	\item Mark the folder \textbf{fonts}.
 	\item Copy it (ctrl+c).
@@ -131,7 +131,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \subsection{Converted font-files}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Go into the folder \textbf{pfb} from the last step in \autoref{sec:conversion}.
 	\item Mark the \textbf{.pfb}-files for Minion Pro and copy them.
 	\item You have to insert the copied \textbf{.pfb}-files into your local {\TeX}MF-folder. (Remember, your username is Phil.)
@@ -150,7 +150,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \section{The Final Steps}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Click down the path \verb+F:\Program Files\MikTeX 2.x\miktex\config+.
 	\item Right-click on \textbf{updmap.cfg} and open with Windows Wordpad.
 	\item At the very end of the file, add \textbf{Map MinionPro.map} and \textbf{Map MyriadPro.map}. Close the file, click on \befehl{Yes} (so that you save the changes) when the dialogue pops up. Please mind: Do not change the filename. The filename has to stay \textbf{updmap.cfg}.
@@ -186,7 +186,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \section{Usage and ligatures}
 
-\begin{itemize}\setlength{\itemsep}{-2pt}
+\begin{itemize}
 	\item In case you would like to search in your generated .pdf-file later on and you are looking for words with ligatures (e.g. ``definition''; for further information see your local wikipedia page for this term, please) or German Umlauten, you are not going to find them. But \LaTeX{} can unmask these symbols so that they become ``searchable'', if you will. It also enables to copy text out of the generated .pdf-file without any problems.\footnote{Without any problems when compiled via PDF\TeX{} (pdflatex.exe), that is. Ironically, the old file I created was created via `PS $\rightarrow$ PDF' (latex.exe) and that \emph{apparently} omits ligatures. So if anyone copied and pasted the following link, it didn't work because of the ligature ``ft'' in Minion Pro.} For that, write/copy\\
 	\verb+http://www.tug.org/texlive/devsrc/Master/texmf/tex/generic/pdftex/+\\
 	into your browser's adress bar and hit Enter.
@@ -207,7 +207,7 @@ Up until April 19, 2013, this guide stated that the metrics for Minion Pro had t
 
 \section{Miscellaneous notes}
 
-\begin{enumerate}\setlength{\itemsep}{-2pt}
+\begin{enumerate}
 	\item Just in case the Myriad Pro resources vanish some day from the server where they are located, you could take a look at the\\
 	\href{http://www.tug.dk/FontCatalogue/}{\LaTeX{} Font Catalogue (http://www.tug.dk/FontCatalogue/)}.\\
 	I think the Bera Sans font looks quite alright with Minion Pro.
