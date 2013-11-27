@@ -3,8 +3,8 @@ MPro-Installation-Guide
 
 This is a guide to install Minion Pro and Myriad Pro for the use with MikTeX.
 
-Simply download the latest file named
-mpro-installation-guide-miktex.pdf
+Simply download the latest file named \n
+mpro-installation-guide-miktex.pdf\n
 and you should be set to go.
 
 If you have questions, please do not hesitate to ask here
