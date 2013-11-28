@@ -6,9 +6,9 @@ Intro
 
 This is a guide to install Minion Pro and Myriad Pro for the use with MikTeX's pdflatex.
 
-The use of pdflatex enables you to use micro-typesetting features more easily in comparison to Xe(La)TeX. ([1](http://tex.stackexchange.com/questions/3094/drawbacks-of-xetex-luatex/), [2](http://tex.stackexchange.com/questions/2986/margin-kerning-in-xelatex-for-texlive-2010-how-to-enable), [3](http://tex.stackexchange.com/questions/72948/xelatex-mathspec-and-microtype-weird-error-messages), [4](http://tex.stackexchange.com/questions/45072/how-do-i-get-the-protrusion-to-work-in-xetex))
+Overall this guide aimed at entry-level users. If you work through the file named *mpro-installation-guide-miktex.pdf*, you should be set to go.
 
-Overall this guide aimed at entry-level users. You should work through the file named 'mpro-installation-guide-miktex.pdf' and you should be set to go.
+The use of pdflatex enables you to use micro-typesetting features more easily in comparison to Xe(La)TeX. ([1](http://tex.stackexchange.com/questions/3094/drawbacks-of-xetex-luatex/), [2](http://tex.stackexchange.com/questions/2986/margin-kerning-in-xelatex-for-texlive-2010-how-to-enable), [3](http://tex.stackexchange.com/questions/72948/xelatex-mathspec-and-microtype-weird-error-messages), [4](http://tex.stackexchange.com/questions/45072/how-do-i-get-the-protrusion-to-work-in-xetex))
 
 Questions?
 -------------
